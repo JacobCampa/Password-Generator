@@ -42,7 +42,7 @@ var specialChar = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
 var allChars = alphabet + alphaUpper + numeric + specialChar;
 var password = ""
 
-
+// initalize variable functions here
 //functions
 function generatePassword() {
     // prompt for length
@@ -100,7 +100,8 @@ function generatePassword() {
 //show password
 
 function writePassword() {
-    var password = generatePassword();
+    // call initalize variables
+    password = generatePassword();
     var passwordText = document.querySelector("#password");
 
     passwordText.value = password;
